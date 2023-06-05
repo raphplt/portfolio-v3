@@ -18,6 +18,7 @@ import Bubbles from "@/components/bubbles";
 import submarine from "../../public/assets/images/submarine.png";
 import { motion } from "framer-motion";
 import MovingSubmarin from "@/components/movingSubmarin";
+import Bubble from "@/components/bubble";
 
 export default function Home() {
   const [sky, setSky] = useState(
@@ -90,13 +91,18 @@ export default function Home() {
             Développeur web Full-stack
           </h2>
         </div>
-        {/* <Image src={submarine} alt="submarine " height={300} width={300} /> */}
         <MovingSubmarin />
+        <Bubbles />
         <div className="flex justify-center  flex-col items-center gap-2 mt-[57vh]">
-          <div className="text-center font-poppins text-xl">
-            <Link href={"#me"}>En découvrir plus</Link>
-          </div>
-          <span className="material-icons ">arrow_downward</span>
+          <Link
+            href={"#me"}
+            className="flex flex-col items-center animate-bounce"
+          >
+            <div className="text-center font-poppins text-xl">
+              En découvrir plus
+            </div>
+            <span className="material-icons">arrow_downward</span>
+          </Link>
         </div>
         <h2
           className="text-center text-6xl font-cormorant mt-36 mb-48 text-white"

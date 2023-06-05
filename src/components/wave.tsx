@@ -1,6 +1,3 @@
-import useWindowDimensions from "@/hooks/useWindowDimensions";
-import { useEffect, useRef, useState } from "react";
-
 export default function Wave() {
   if (typeof window !== "undefined") {
     var container = document.body;
