@@ -18,7 +18,6 @@ import Bubbles from "@/components/bubbles";
 import submarine from "../../public/assets/images/submarine.png";
 import { motion } from "framer-motion";
 import MovingSubmarin from "@/components/movingSubmarin";
-import Bubble from "@/components/bubble";
 
 export default function Home() {
   const [sky, setSky] = useState(
@@ -81,7 +80,7 @@ export default function Home() {
         <div className="h-12"></div>
         <Wave />
       </div>
-      <div className="h-[500vh] bg-gradient-to-b from-[#0277BD] to-[#03010f] mt-12">
+      <div className="h-[700vh] bg-gradient-to-b from-[#0277BD] to-[#03010f] mt-12">
         <div className="flex items-center gap-5 flex-col pt-24">
           <div className="text-2xl text-[#151029] mb-4">Hey, je suis</div>
           <h1 className="text-7xl font-cormorant text-[#151029]">
@@ -93,6 +92,7 @@ export default function Home() {
         </div>
         <MovingSubmarin />
         <Bubbles />
+
         <div className="flex justify-center  flex-col items-center gap-2 mt-[57vh]">
           <Link
             href={"#me"}
@@ -252,6 +252,20 @@ export default function Home() {
                 l'une de mes passions.
               </p>
             </div>
+          </div>
+        </div>
+        <h2
+          className="text-center text-6xl font-cormorant mt-96 mb-36 text-white"
+          id="projects"
+          ref={target2}
+        >
+          Mes compétences
+        </h2>
+        <div>
+          <div className="flex ml-48 gap-10 text-white text-2xl">
+            <div>Développement web</div>
+            <div>Algorithmie</div>
+            <div>Autres</div>
           </div>
         </div>
       </div>
