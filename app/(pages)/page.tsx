@@ -1,4 +1,9 @@
-// `app/page.tsx` is the UI for the `/` URL
+import Sphere from "../_components/scene";
+
 export default function Page() {
-	return <h1 className="text-center">Hello, Home page!</h1>;
+	return (
+		<div className={`h-[100vh] v-[100vw] bg-space`}>
+			<Sphere />
+		</div>
+	);
 }
